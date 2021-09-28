@@ -1,0 +1,237 @@
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+/* setting the box sizing attribute for the pages */
+* {
+  box-sizing: border-box;
+}
+
+/* setting general rules for body  and html */
+body, html {
+  margin: 0px;
+  padding: 0px;
+  background-image: image("bg3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* for link and link visited, no underlining and keeping the color uniform  */
+a, a:visited{
+  text-decoration: none;
+  color: #fff;
+}
+
+/* changing color when the link is hovered over */
+a:hover {
+  color: #7252ff;
+}
+
+/* fixing the menu to the top and applying style to it */
+.menu  {
+  background-color: #050017;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 115px;
+  padding-top: 0px;
+  font-family: 'Gemunu Libre', sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  text-align: center;
+}
+
+/* displaying each menu link as inline block */
+#HOME {
+  display: inline-block;
+  padding-right: 25px;
+}
+
+#STATS {
+  display: inline-block;
+  padding-right: 25px;
+}
+
+#ARTICLES {
+  display: inline-block;
+}
+
+/* making the main container relative */
+.mainContainer {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+/* fixed bg so that content will scroll over it */
+.backgroundImage {
+  position: fixed;
+  max-width: 100%;
+  max-height: auto;
+}
+
+/* absolute positioning allows for content to overelap the bg image */
+.homeContent {
+  /* background-color: #ff00ff; */
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  padding-bottom: 200px;
+}
+
+/* setting left and right margins to auto allows the img to be centered in the div */
+.rocketIcon {
+  /* background-color: #fff; */
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
+  width: 50%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+/* letting the img fill up 100% of the div container its in */
+#rocket {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* centering the div on the page */
+.twoColumnContainer{
+  /* background-color: #fff; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* styling the columns */
+.leftColumn {
+  background-color: #fff;
+  padding: 50px;
+  text-indent: 50px;
+}
+
+.rightColumn {
+  background-color: #fff;
+  padding: 50px;
+  text-indent: 50px;
+}
+
+/* styling the title */
+.title {
+  margin-top: 200px;
+  font-family: 'Poller One', cursive;
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+}
+
+/* centering the infograph  */
+.infoGraphic {
+  /* background-color: #fff; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+/* letting the infograph fill up its div */
+#info {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* styling the subtitle */
+.subtitle {
+  /* background-color: #fff; */
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 25px;
+  color: #fff;
+}
+
+#SpaceX {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+#equals {
+  display: inline-block;
+  padding-right: 25px;
+}
+
+#flights {
+  display: inline-block;
+}
+
+/* floating article cards so that another can be placed next to it */
+.leftArticle {
+  position: relative;
+  width: 25%;
+  height: 450px;
+  background-color: #fff;
+  margin-top: 150px;
+  margin-left: 275px;
+  float: left;
+}
+
+.rightArticle {
+  position: relative;
+  width: 25%;
+  height: 450px;
+  background-color: #fff;
+  margin-top: 150px;
+  margin-right: 275px;
+  float: right;
+}
+
+/* setting the size and positioning of the image */
+#articleImage {
+  max-width: 70%;
+  max-height: auto;
+  padding-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* setting the font size and positioning of the caption */
+.articleCaption {
+  font-size: 20px;
+  max-width: 70%;
+  max-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* setting the size and positioning of the button */
+.articleButton {
+  /* background-color: #ff00ff; */
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  max-width: 15%;
+  max-height: 55px;
+  float: right;
+  margin-right: 50px;
+  margin-bottom: 25px;
+}
+
+
+#button {
+  max-width: 100%;
+  max-height: 100%;
+}
